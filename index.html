@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Flight - Arcade Space Adventure</title>
+    <link rel="shortcut icon" href="assects/darklg.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+    
+    <!-- Stars Background -->
+    <div class="stars-background" id="stars"></div>
+
+    <!-- Loading Screen -->
+    <div class="wrapper">
+        <div class="sec-wrapper">
+            <img src="Assects/AuroraLg.png" alt="Dr.Flight Logo" class="arlogo">
+        <svg>
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                Dr.Flight
+            </text>
+        </svg>
+        </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-icon"></div>
+                <h1>DR.<span>Flight</span></h1>
+            </a>
+            <div class="menu-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#trainers">Mods</a></li>
+                <li><a href="#pricing">Download</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="play-btn" href="#"></i> Play Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <h1>DR.FLIGHT</h1>
+            <span class="hero-tagline">Puzzle Runner</span>
+            <img src="Assects/rocket.png"" class=" rocket" id="rocket">
+            <span class="hero-sub">DODGE • DESTROY • SURVIVE</span>
+            <div class="hero-buttons">
+                <a href="#pricing" class="cta-button">Play Now <i class="fas fa-arrow-right"></i></a>
+                <a href="#about" class="secondary-button"><i class="fas fa-info-circle"></i> Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="stats-container">
+            <div class="stat-item fade-up">
+                <i class="fas fa-users"></i>
+                <span class="counter" data-target="100">0</span>
+                <p>Pre Orders</p>
+            </div>
+            <div class="stat-item fade-up">
+                <i class="fas fa-user"></i>
+                <span class="counter" data-target="2">0</span>
+                <p>Mods/Devs</p>
+            </div>
+            <div class="stat-item fade-up">
+                <i class="fas fa-clock"></i>
+                <span class="counter" data-target="100">0</span>
+                <p>Playing Hrs</p>
+            </div>
+            <div class="stat-item fade-up">
+                <i class="fas fa-award"></i>
+                <span class="counter" data-target="10">0</span>
+                <p>Years Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title fade-in">Game Features</h2>
+        <div class="services-grid">
+            <div class="service-card fade-up">
+                <i class="fas fa-gamepad"></i>
+                <h3>Arcade Action</h3>
+                <p>Experience fast-paced space action with intuitive controls and challenging gameplay</p>
+                <a href="#" class="service-link">
+                    <p>Learn More </p><i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="service-card fade-up">
+                <i class="fas fa-meteor"></i>
+                <h3>Obstacle Course</h3>
+                <p>Dodge and destroy asteroids, enemy ships, and space debris in your path</p>
+                <a href="#" class="service-link">
+                    <p>Learn More </p><i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="service-card fade-up">
+                <i class="fas fa-star"></i>
+                <h3>Score System</h3>
+                <p>Compete for high scores as the game progressively gets more challenging</p>
+                <a href="#" class="service-link">
+                    <p>Learn More </p><i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="service-card fade-up">
+                <i class="fas fa-rocket"></i>
+                <h3>Space Exploration</h3>
+                <p>Navigate through different space environments with unique challenges</p>
+                <a href="#" class="service-link">
+                    <p>Learn More </p><i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text fade-up">
+                <h2 class="section-title">About DR.Flight</h2>
+                <p>An arcade game written with C# and powered by Unity engine. The game is inspired by flappy bird and
+                    space arcade. It is titled as 'DR.Flight'. It consists of a space game object that will have to
+                    dodge and destroy the obstacles in order to survive and complete the objectives.</p>
+                <p>We have also added a score system which makes the game harder as it progresses. We hope to revive the
+                    arcade game industry that has been rather silent since the digitalized high graphics games took over
+                    the media.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Non-endless gameplay with objectives</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Expert game development</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Regular updates and new content</span>
+                    </div>
+                </div>
+                <a href="#contact" class="cta-button">Contact Us</a>
+            </div>
+            <div class="about-image fade-up">
+                <img src="assects/ss.png" alt="DR.Flight Game Screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers/Mods Section -->
+    <section id="trainers" class="trainers">
+        <h2 class="section-title fade-in">Our Developers</h2>
+        <div class="trainers-grid">
+            <div class="trainer-card fade-up">
+                <div class="trainer-image">
+                    <img src="Assects/Aayush.jpg" Aayush Neupane">
+                    <div class="trainer-social">
+                        <a href="https://www.instagram.com/dynamic_aayush38/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/khatra.manxey.071129"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="trainer-info">
+                    <h3>Aayush Neupane</h3>
+                    <p class="trainer-role">Game Developer</p>
+                    <p class="trainer-desc">Expert in Game Development and Robotics</p>
+                </div>
+            </div>
+            <div class="trainer-card fade-up">
+                <div class="trainer-image">
+                    <img src="Assects/yamanjr.jpg" alt="Yaman Chapagain">
+                    <div class="trainer-social">
+                        <a href="https://www.instagram.com/yamanjr10/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/yamanjr10"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/yamanjr10"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="trainer-info">
+                    <h3>Yaman Chapagain</h3>
+                    <p class="trainer-role">Web Developer</p>
+                    <p class="trainer-desc">Expert in Web Development and Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Download Options</h2>
+            <div class="pricing-container">
+                <div class="pricing-card fade-up">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Basic Version</h3>
+                        <div class="pricing-price">Free</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Full Game Access</li>
+                        <li><i class="fas fa-check"></i> Basic Spacecraft</li>
+                        <li><i class="fas fa-check"></i> 3 Levels</li>
+                        <li><i class="fas fa-check"></i> Standard Graphics</li>
+                        <li><i class="fas fa-times"></i> No Ads</li>
+                        <li><i class="fas fa-times"></i> Limited Customization</li>
+                    </ul>
+                    <a class='cta-button' href='/subscribe'>Download Now</a>
+                </div>
+
+                <div class="pricing-card popular fade-up">
+                    <div class="popular-badge">Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Pro Version</h3>
+                        <div class="pricing-price">$4.99</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> All Basic Features</li>
+                        <li><i class="fas fa-check"></i> Advanced Spacecraft</li>
+                        <li><i class="fas fa-check"></i> All Levels Unlocked</li>
+                        <li><i class="fas fa-check"></i> Enhanced Graphics</li>
+                        <li><i class="fas fa-check"></i> No Ads</li>
+                        <li><i class="fas fa-check"></i> Full Customization</li>
+                    </ul>
+                    <a class='cta-button' href='/subscribe'>Download Now</a>
+                </div>
+
+                <div class="pricing-card fade-up">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Deluxe Version</h3>
+                        <div class="pricing-price">$9.99</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> All Pro Features</li>
+                        <li><i class="fas fa-check"></i> Exclusive Spacecraft</li>
+                        <li><i class="fas fa-check"></i> Early Access to New Levels</li>
+                        <li><i class="fas fa-check"></i> Premium Graphics Pack</li>
+                        <li><i class="fas fa-check"></i> Behind-the-Scenes Content</li>
+                        <li><i class="fas fa-check"></i> Developer Support</li>
+                    </ul>
+                    <a class='cta-button' href='/subscribe'>Download Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <h2 class="section-title fade-in">What Players Say</h2>
+        <div class="reviews-container">
+            <div class="reviews-slider">
+                <div class="review-card fade-up">
+                    <div class="review-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The best arcade game I have ever seen. The developers are exceptional and the gameplay is so
+                            addictive. I can't stop playing!"</p>
+                    </div>
+                    <div class="review-author">
+                        <img src="Assects/ayush.jpg" alt="Ayush">
+                        <div class="author-info">
+                            <h4>Ayush</h4>
+                            <p>Player since 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card fade-up">
+                    <div class="review-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"This game brings back the golden age of arcade games but with modern twists. The obstacles
+                            are challenging but fair, and the progression system keeps me coming back for more."</p>
+                    </div>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1492446845049-9c50cc313f00?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Roman">
+                        <div class="author-info">
+                            <h4>Roman</h4>
+                            <p>Player since 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title fade-in">Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info fade-up">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Damak, Jhapa</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>(+977) 9811306289</p>
+                        <p>(+977) 9862862023</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>theghostoftheuchiha38@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form fade-up">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+               <div class="tl">
+                 <img src="Assects/AuroraLg.png" alt="" class="aura">
+                <h3 style="color: white;">AURORA GAMES</h3>
+               </div>
+                <p>Brought to you by Aurora games; A newly founded Tech startrup.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/yamanjr10"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/yamanjr10/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/jr_yaman64811"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/@ToonGamerz1"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Features</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Damak, Jhapa</p>
+                <p><i class="fas fa-phone"></i> (+977) 9862862023</p>
+                <p><i class="fas fa-phone"></i> (+977) 9811306289</p>
+                <p><i class="fas fa-envelope"></i> theghostoftheuchiha38@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe for updates and new features</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DR.Flight. All rights reserved.</p>
+            <p>Developed by <a href="https://dynamic-aayush38.netlify.app" target="_blank">Aayush Neupane</a> & <a
+                    href="#">Yaman Chapagain</a></p>
+        </div>
+    </footer>
+
+    <script src="Js/main.js"></script>
+</body>
+
+</html>
