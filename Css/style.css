@@ -52,6 +52,14 @@
      stroke: #24bae4;
      font-size: 150px;
  }
+@media screen and (max-width: 1024px) {
+    svg{
+        scale: 0.8;
+    }
+    svg text {
+        font-size: 100px;
+    }
+}
 
  @keyframes stroke {
      0% {
