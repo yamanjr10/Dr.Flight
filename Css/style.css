@@ -53,12 +53,8 @@
      font-size: 150px;
  }
 @media screen and (max-width: 1024px) {
-    svg{
-        scale: 0.8;
-    }
-    svg text {
-        font-size: 100px;
-    }
+  .wrapper{
+   display: none;
 }
 
  @keyframes stroke {
